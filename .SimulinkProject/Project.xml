@@ -99,6 +99,20 @@
                 </Category>
             </Info>
         </File>
+        <File Location="testupdate.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="fpropsR134a.mat">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
     </Files>
     <EntryPointGroups Location="Root">
         <EntryPointGroup Location="7e5267a8-7ec1-426e-8f10-85183cd4a0dd">
