@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Label Location="derived">
+                <Info Name="Derived"/>
+            </Label>
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="other">
+                <Info Name="Other"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience"/>
+            </Label>
+            <Label Location="design">
+                <Info Name="Design"/>
+            </Label>
+        </Category>
+        <Category Location="ReviewCategory">
+            <Info DataType="String" Name="Review" ReadOnly="1" SingleValued="1"/>
+            <Label Location="needMoreInfo">
+                <Info Name="More Information Required"/>
+            </Label>
+            <Label Location="approved">
+                <Info Name="Approved"/>
+            </Label>
+            <Label Location="rejected">
+                <Info Name="Rejected"/>
+            </Label>
+            <Label Location="toReview">
+                <Info Name="To Review"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Root Location="Extensions">
+        <Extension Location="Information">
+            <Info description=""/>
+        </Extension>
+    </Root>
+    <Config Location="Configuration">
+        <Info StartInProjectRoot="0"/>
+    </Config>
+    <Files Location="Root">
+        <File Location="utilities">
+            <File Location="project_paths.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="set_up_project.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="clean_up_project.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="none"/>
+                </Category>
+            </Info>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+        </File>
+        <File Location="run.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="README.md">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="update.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+    </Files>
+    <EntryPointGroups Location="Root">
+        <EntryPointGroup Location="7e5267a8-7ec1-426e-8f10-85183cd4a0dd">
+            <Info Name="Startup &amp; Shutdown"/>
+        </EntryPointGroup>
+    </EntryPointGroups>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="f1ea1543-d11d-42e1-be9d-83589be9fcbb">
+            <Info File="utilities/clean_up_project.m"
+                GroupUUID="7e5267a8-7ec1-426e-8f10-85183cd4a0dd"
+                Name="Clean Up Project" Type="Shutdown"/>
+        </EntryPoint>
+        <EntryPoint Location="f0fc146e-585a-4e73-9c00-d3a0322fa068">
+            <Info File="utilities/set_up_project.m"
+                GroupUUID="7e5267a8-7ec1-426e-8f10-85183cd4a0dd"
+                Name="Set Up Project" Type="StartUp"/>
+        </EntryPoint>
+    </EntryPoints>
+    <Info Location="ProjectData">
+        <Info Name="testupdate"/>
+    </Info>
+</project>
